@@ -1,7 +1,7 @@
-import React, { Component, Fragment } from 'react';
+import React, { Fragment } from 'react';
 import styled from 'styled-components';
 import placeholder from '../../img/placeholder_200x200.png';
-import API from '../../utils/api';
+// import API from '../../utils/api';
 
 const PlanCardDiv = styled.div`
     float: left;

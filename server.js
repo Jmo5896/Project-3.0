@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const session = require('express-session');
 const morgan = require('morgan');
 const router = require("./routes/api");
+const path = require('path');
 const passport = require('./passport');
 var MongoStore = require('connect-mongo')(session);
 const app = express();
@@ -26,9 +27,9 @@ app.use(session({
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 // Serve up static assets (usually on heroku)
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("client/build"));
-}
+// if (process.env.NODE_ENV === "production") {
+//   app.use(express.static("client/build"));
+// }
 // Add routes, both API and view
 app.use("/api", router);
 
@@ -40,6 +41,12 @@ app.use(passport.session()) // calls the deserializeUser
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
+
+//trying to launch on heroku
+app.use(express.static(path.join(__dirname,'client', 'build')));
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, 'client', 'build', 'index.html'));
+});
 
 // Start the API server
 app.listen(PORT, function() {

@@ -7,11 +7,11 @@ const ItemDiv = styled.div`
     margin-left: 1em;
 `;
 
-const LineItem = styled.p`
-    /* margin-left: 1em;
-    justify-content: flex-start;
-    font-family: 'Roboto', sans-serif; */
-`;
+// const LineItem = styled.p`
+//     /* margin-left: 1em;
+//     justify-content: flex-start;
+//     font-family: 'Roboto', sans-serif; */
+// `;
 
 const ItemSymbol = styled.p`
     font-family: 'Roboto', sans-serif;

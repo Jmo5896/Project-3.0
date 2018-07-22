@@ -11,26 +11,26 @@ import LoginForm from './components/login-form'
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
 
-const AppContext = React.createContext()
+// const AppContext = React.createContext()
 
-class AppProvider extends Component {
+// class AppProvider extends Component {
 
-  state = {
-    currentLoggedInUser: '',
-    // setCurrent: () => {
-    //   this.setState({ currentLoggedInUser: response.data.username})
-    // }
-  }
+//   state = {
+//     currentLoggedInUser: '',
+//     // setCurrent: () => {
+//     //   this.setState({ currentLoggedInUser: response.data.username})
+//     // }
+//   }
 
-  render() {
+//   render() {
 
-      return (
-        <AppContext.Provider value={this.state}>
-          {this.props.children}
-        </AppContext.Provider>
-      )
-    }
-}
+//       return (
+//         <AppContext.Provider value={this.state}>
+//           {this.props.children}
+//         </AppContext.Provider>
+//       )
+//     }
+// }
 
 class App extends Component {
   constructor() {

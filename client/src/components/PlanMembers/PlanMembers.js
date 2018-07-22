@@ -23,14 +23,14 @@ const MemDiv = styled.div`
     justify-content: left;
 `;
 
-let members = [];
+// let members = [];
 
 const PlanMembers = () => {
 
-    const grabMembers = () => {
-        //axios (GET) call, store in array members
+    // const grabMembers = () => {
+    //     //axios (GET) call, store in array members
         
-    }
+    // }
 
     return (
         <Fragment>
