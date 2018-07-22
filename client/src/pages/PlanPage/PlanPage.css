@@ -1,0 +1,27 @@
+.container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.InfoPanel {
+    width: 25%;
+    height: calc(100vh - 58px);
+    margin: auto 0px;
+    float: left;
+}
+
+.VisualPanel {
+    width: 75%;
+    height: calc(100vh - 58px);
+    margin: auto;
+    float: left;
+    overflow: scroll;
+    background: #f1f1f1;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}

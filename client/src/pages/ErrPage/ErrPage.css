@@ -1,0 +1,112 @@
+.err_body {
+    height:640px;
+    width: auto;
+    animation: mymove 1s infinite;
+}
+
+.errMsg {
+    text-align: center;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 36px;
+    animation: fontColor 2s infinite;
+}
+
+.emoji {
+    margin-top: 10em;
+    margin-left: 40em;
+    margin-right: 5em;
+    width: 200px;
+    height: auto;
+    text-align: center;
+    animation-name: spin;
+    animation-duration: 3000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    /* animation-direction: alternate; */
+}
+
+@keyframes spin {
+    0% {
+        transform:rotate(0deg);
+    }
+    50% {
+        transform:rotate(360deg);
+    }
+    100% {
+        transform: rotate(720deg);
+    }
+}
+
+@keyframes fontColor {
+    
+    0% {
+        color: red;
+    }
+    10% {
+        color: orangered;
+    }
+    20% {
+        color: orange;
+    }
+    30% {
+        color: yellow;
+    }
+    40%{
+        color: lime;
+    }
+    50%{
+        color: green;
+    }
+    60%{
+        color: lightseagreen;
+    }
+    70%{
+        color: blue;
+    }
+    80%{
+        color: darkmagenta;
+    }
+    90% {
+        color: darkviolet;
+    }
+    100% {
+        color: mediumvioletred;
+    }
+}
+
+@keyframes mymove {
+    
+    0% {
+        background-color: red;
+    }
+    10% {
+        background-color: orangered;
+    }
+    20% {
+        background-color: orange;
+    }
+    30% {
+        background-color: yellow;
+    }
+    40%{
+        background-color: lime;
+    }
+    50%{
+        background-color: green;
+    }
+    60%{
+        background-color: lightseagreen;
+    }
+    70%{
+        background-color: blue;
+    }
+    80%{
+        background-color: darkmagenta;
+    }
+    90% {
+        background-color: darkviolet;
+    }
+    100% {
+        background-color: mediumvioletred;
+    }
+}

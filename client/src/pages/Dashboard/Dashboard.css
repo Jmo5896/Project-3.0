@@ -1,0 +1,42 @@
+.container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+.leftPanel {
+    width: 25%;
+    height: calc(100vh - 58px);
+    float: left;
+}
+
+.cardPanel {
+    width: 75%;
+    height: calc(100vh - 58px);
+    margin: auto;
+    float: left;
+    overflow: scroll;
+    background: whitesmoke;
+}
+
+
+.card:hover {
+    box-shadow: 0 0px 16px 0 rgba(0,0,0,0.1);
+}
+/* 
+.profileImg {
+    width: 100%;
+    margin: auto;
+}
+
+.profileInfo {
+    width: 90%;
+    margin: auto;
+} */
+
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
